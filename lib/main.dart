@@ -5,6 +5,15 @@ import 'package:flutter/material.dart';
 
 import 'amplifyconfiguration.dart';
 
+//How to recreate + Important Information
+// Requirements: you should have a device that you can use and flutter on you computer
+// Step 1: complete the getting started described here: https://docs.amplify.aws/lib/project-setup/create-application/q/platform/flutter/#4-initialize-amplify-in-the-application
+// Step 2: follow the steps for social sign in with webUI: https://docs.amplify.aws/lib/auth/social_signin_web_ui/q/platform/flutter/#android-platform-setup
+// Step 3: Run the code from this main.dart on a device
+// Important Information: The FutureBuilder gives frontend developers the ability to
+// access user information if they are logged in: https://api.flutter.dev/flutter/widgets/FutureBuilder-class.html
+
+
 void main() {
   runApp(const MyApp());
 }
@@ -51,7 +60,7 @@ class HomeWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Auth vNext')),
+      appBar: AppBar(title: Text('Authentication Results')),
       body: Padding(
         padding: EdgeInsets.all(16),
         child: Center(
